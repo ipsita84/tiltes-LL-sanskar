@@ -1,0 +1,61 @@
+Notebook[{
+Cell["PLL spectrum of strained tilted Dirac cones (corrected)", "Title"],
+Cell["Consistent with arxiv_ss.tex. Dimensionless variables: k = a0 kx, energy = a0 E/vx, B = a0^2 e B, rat = vy/vx. The level formula is Eq. (12): E/vx = eta k + si Sqrt[w Lambda - rt^2 Lambda^2/4], with Lambda = 2 |zeta| (n+1), |zeta| = |B| rat, w = xi k rt + s_{-xi} s_xi = 1 + 3 xi k/2, and n = 0, 1, 2, ... Level n exists only if rt^2 |zeta| (n+1) <= w. Run the cells in order, starting with the self-test.", "Text"],
+Cell["(* ---------- model functions ---------- *)
+ClearAll[rt, ss, wxi, zet, lam, exists, en, ven];
+rt[xi_, k_] := 3/2 + xi k/4;
+ss[xi_, k_] := 1 + xi k/2;
+wxi[xi_, k_] := xi k rt[xi, k] + ss[xi, k] ss[-xi, k];       (* = 1 + 3 xi k/2 *)
+zet[rat_, B_] := Abs[B] rat;                                  (* |zeta| = |e B| vy/vx *)
+lam[n_, rat_, B_] := 2 zet[rat, B] (n + 1);
+exists[xi_, k_, n_, rat_, B_] := wxi[xi, k] > 0 && rt[xi, k]^2 zet[rat, B] (n + 1) <= wxi[xi, k];
+en[xi_, eta_, k_, n_, sign_, rat_, B_] := eta k + sign Piecewise[
+   {{Sqrt[wxi[xi, k] lam[n, rat, B] - rt[xi, k]^2 lam[n, rat, B]^2/4], exists[xi, k, n, rat, B]}}, Indeterminate];
+(* exact d(en)/dk, valid where the level exists *)
+ven[xi_, eta_, k_, n_, sign_, rat_, B_] := eta + sign (lam[n, rat, B] (3 xi/2) - rt[xi, k] (xi/4) lam[n, rat, B]^2/2)/
+    (2 Sqrt[wxi[xi, k] lam[n, rat, B] - rt[xi, k]^2 lam[n, rat, B]^2/4]);", "Input"],
+Cell["Self-test. The first two lists should be of order 10^-15 and the third of order 10^-9 or smaller. The reference numbers come from an independent Python implementation, which was also checked against a grid diagonalisation of the strained Hamiltonian.", "Text"],
+Cell["tests = {{1, 0.9, 0.1, 3, 1, 1/9, 0.002}, {-1, 0.9, 0.1, 3, 1, 1/9, 0.002}, {1, -0.3, -0.2, 0, -1, 0.8, 0.001}, {-1, 0.5, 0.25, 7, 1, 1, 0.0005}};
+refE = {0.13519520896710455, 0.1288508957266809, 0.026553708725779473, 0.1954765031765907};
+refV = {0.9294949869517294, 0.8656882563355374, -0.33587148094128894, 0.41494683008065253};
+Print[\"energy differences:   \", Table[en @@ tests[[i]] - refE[[i]], {i, 4}]];
+Print[\"velocity differences: \", Table[ven @@ tests[[i]] - refV[[i]], {i, 4}]];
+Print[\"velocity vs numerical derivative: \", Table[
+   With[{t = tests[[i]], h = 10^-6}, ven @@ t - (en[t[[1]], t[[2]], t[[3]] + h, t[[4]], t[[5]], t[[6]], t[[7]]] - en[t[[1]], t[[2]], t[[3]] - h, t[[4]], t[[5]], t[[6]], t[[7]]])/(2 h)], {i, 4}]];", "Input"],
+Cell["Figure builder. Each panel has the brown title with the parameters and the original axis labels. Blue and orange are the branches si = + and si = -. The red line, drawn only if zero = True, is the zero mode E = eta k, which exists in both valleys.", "Text"],
+Cell["panelTitle[xi_, eta_, ratLabel_, BLabel_] := Style[
+   Row[{\"{\", \"\\[Xi]\", \", \", Subscript[\"\\[Eta]\", \"x\"], \", \", Row[{Subscript[\"v\", \"y\"], \"/\", Subscript[\"v\", \"x\"]}], \", \",
+        Row[{Superscript[Subscript[\"a\", \"0\"], 2], \" \", \"\\[ScriptCapitalB]\"}], \"} = {\", If[xi > 0, \"+\", \"\\[Minus]\"], \", \",
+        If[eta > 0, eta, Row[{\"\\[Minus]\", -eta}]], \", \", ratLabel, \", \", BLabel, \"}\"}],
+   FontFamily -> \"Times\", Bold, Darker[Brown], 18];
+
+pllPanel[xi_, eta_, rat_, B_, kmax_, nlev_, zero_, ratLabel_, BLabel_] := Show[
+   Plot[Evaluate[Table[en[xi, eta, k, n, 1, rat, B], {n, 0, nlev - 1}]], {k, -kmax, kmax},
+     PlotStyle -> Directive[RGBColor[0, 0, 1], Thickness[0.004]], Exclusions -> None, PlotRange -> All],
+   Plot[Evaluate[Table[en[xi, eta, k, n, -1, rat, B], {n, 0, nlev - 1}]], {k, -kmax, kmax},
+     PlotStyle -> Directive[Orange, Thickness[0.004]], Exclusions -> None, PlotRange -> All],
+   If[zero, Plot[eta k, {k, -kmax, kmax}, PlotStyle -> Directive[Red, Thickness[0.004]]], Graphics[{}]],
+   PlotRange -> All, Axes -> None, Frame -> True, GridLines -> Automatic,
+   BaseStyle -> {Bold, 22, FontFamily -> \"Times\"}, LabelStyle -> Directive[Black],
+   FrameLabel -> {Style[Row[{Subscript[\"a\", \"0\"], \" \", Subscript[\"k\", \"x\"]}], 22, Bold, FontFamily -> \"Times\"],
+                  Style[Row[{\"PLL energy \\[Times] \", Subscript[\"a\", \"0\"], \"/\", Subscript[\"v\", \"x\"]}], 19, FontFamily -> \"Times\"]},
+   FrameTicksStyle -> Directive[Darker[Gray], 16], ImageSize -> 450,
+   PlotLabel -> panelTitle[xi, eta, ratLabel, BLabel],
+   ImagePadding -> {{80, Automatic}, {Automatic, 10}}];
+
+pllFigure[rat_, B_, etaval_, kmax_, nlev_, zero_, ratLabel_, BLabel_] :=
+  GraphicsGrid[{{pllPanel[1, etaval, rat, B, kmax, nlev, zero, ratLabel, BLabel], pllPanel[-1, etaval, rat, B, kmax, nlev, zero, ratLabel, BLabel]},
+                {pllPanel[1, -etaval, rat, B, kmax, nlev, zero, ratLabel, BLabel], pllPanel[-1, -etaval, rat, B, kmax, nlev, zero, ratLabel, BLabel]}},
+     Spacings -> {20, 20}, ImageSize -> 1000];", "Input"],
+Cell["Parameters. They match the transport figures (a0^2 e B = 2*10^-4) and lie inside the validity window of the manuscript, 2*10^-6 << a0^2 e B << 7*10^-4 and a0 |kx| << 1. Change them here only. The labels only control what is printed in the panel titles.", "Text"],
+Cell["Bsc = 2*10^-4; kmax = 0.3; nlev = 20; etaval = 0.9;
+BLabel = Row[{2, \"\\[Times]\", Superscript[10, -4]}];
+ratA = 1/9;  ratALabel = Row[{1, \"/\", 9}];   (* figPLL  *)
+ratB = 1;    ratBLabel = 1;                  (* figPLL2 *)", "Input"],
+Cell["figPLL (no zero-mode line)", "Text"],
+Cell["allpl = pllFigure[ratA, Bsc, etaval, kmax, nlev, False, ratALabel, BLabel]", "Input"],
+Cell["SetDirectory[NotebookDirectory[]]; Export[\"figPLL.pdf\", Rasterize[allpl, Background -> None], ImageResolution -> 500, ImageSize -> 500];", "Input"],
+Cell["figPLL2 (with the zero mode in red)", "Text"],
+Cell["allpl = pllFigure[ratB, Bsc, etaval, kmax, nlev, True, ratBLabel, BLabel]", "Input"],
+Cell["SetDirectory[NotebookDirectory[]]; Export[\"figPLL2.pdf\", Rasterize[allpl, Background -> None], ImageResolution -> 500, ImageSize -> 500];", "Input"]
+}, WindowSize -> {900, 800}]

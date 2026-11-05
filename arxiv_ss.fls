@@ -226,12 +226,8 @@ INPUT /usr/share/texmf/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/cm/cmbx9.tfm
-INPUT ./arxiv_ss.toc
-INPUT ./arxiv_ss.toc
-INPUT arxiv_ss.toc
-OUTPUT arxiv_ss.toc
-INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texmf/fonts/tfm/public/latex-fonts/lasyb10.tfm
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT ./disp.pdf
 INPUT ./disp.pdf
 INPUT ./disp.pdf
@@ -272,6 +268,10 @@ INPUT ./sigma_etax1.png
 INPUT ./sigma_etax1.png
 INPUT ./sigma_etax1.png
 INPUT ./sigma_etax1.png
+INPUT ./sigma_etax_delta.png
+INPUT ./sigma_etax_delta.png
+INPUT ./sigma_etax_delta.png
+INPUT ./sigma_etax_delta.png
 INPUT ./sigma_B.png
 INPUT ./sigma_B.png
 INPUT ./sigma_B.png

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/TeX Live for SUSE Linux) (preloaded format=pdflatex 2026.9.24)  22 OCT 2026 18:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/TeX Live for SUSE Linux) (preloaded format=pdflatex 2026.9.24)  5 NOV 2026 23:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -502,31 +502,31 @@ File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 Package: xparse 2025-10-09 L3 Experimental document command parser
 ))
 Class revtex4-2 Info: colortbl package is loaded. (Proceeding with fingers cros
-sed.) on input line 53.
-Class revtex4-2 Info: cite was not loaded (OK!) on input line 53.
-Class revtex4-2 Info: mcite was not loaded (OK!) on input line 53.
-Class revtex4-2 Info: multicol was not loaded (OK!) on input line 53.
+sed.) on input line 52.
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 52.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 52.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 52.
  (./arxiv_ss.aux)
 \openout1 = `arxiv_ss.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
 (/usr/share/texmf/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count328
@@ -575,107 +575,107 @@ LaTeX Font Info:    ... okay on input line 53.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 53.
+Package hyperref Info: Link coloring ON on input line 52.
 (./arxiv_ss.out) (./arxiv_ss.out)
 \@outlinefile=\write5
 \openout5 = `arxiv_ss.out'.
 
-Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 53.
+Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 52.
 \openout3 = `arxiv_ssNotes.bib'.
 
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 72
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 71
 .
  (/usr/share/texmf/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 72.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 71.
 
 
 (/usr/share/texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 72.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 71.
 
 
 (/usr/share/texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./arxiv_ss.toc)
-\tf@toc=\write6
-\openout6 = `arxiv_ss.toc'.
-
+)
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 88.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 88.
  [1
 Non-PDF special ignored!
 <special> header=psfrag.pro
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 89.
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 89.
-<disp.pdf, id=99, 181.67876pt x 246.9225pt>
+<disp.pdf, id=104, 181.67876pt x 246.9225pt>
 File: disp.pdf Graphic file (type pdf)
 <use disp.pdf>
 Package pdftex.def Info: disp.pdf  used on input line 102.
 (pdftex.def)             Requested size: 121.65318pt x 165.343pt.
-<EB.jpg, id=100, 672.9005pt x 377.74739pt>
+<EB.jpg, id=105, 672.9005pt x 377.74739pt>
 File: EB.jpg Graphic file (type jpg)
 <use EB.jpg>
 Package pdftex.def Info: EB.jpg  used on input line 103.
 (pdftex.def)             Requested size: 264.46837pt x 148.46791pt.
- [2 <./disp.pdf> <./EB.jpg>] [3] [4]
-<figPLL.pdf, id=171, 455.7025pt x 324.21124pt>
+ [2 <./disp.pdf> <./EB.jpg>] [3]
+<figPLL.pdf, id=154, 455.7025pt x 324.21124pt>
 File: figPLL.pdf Graphic file (type pdf)
 <use figPLL.pdf>
-Package pdftex.def Info: figPLL.pdf  used on input line 262.
-(pdftex.def)             Requested size: 370.2541pt x 263.42593pt.
-<figPLL2.pdf, id=172, 455.7025pt x 324.21124pt>
+Package pdftex.def Info: figPLL.pdf  used on input line 268.
+(pdftex.def)             Requested size: 396.70256pt x 282.2396pt.
+<figPLL2.pdf, id=155, 455.7025pt x 324.21124pt>
 File: figPLL2.pdf Graphic file (type pdf)
 <use figPLL2.pdf>
-Package pdftex.def Info: figPLL2.pdf  used on input line 263.
-(pdftex.def)             Requested size: 370.2541pt x 263.42593pt.
-<sigma.png, id=173, 1004.553pt x 390.9807pt>
+Package pdftex.def Info: figPLL2.pdf  used on input line 269.
+(pdftex.def)             Requested size: 396.70256pt x 282.2396pt.
+<sigma.png, id=156, 577.79865pt x 304.9794pt>
 File: sigma.png Graphic file (type png)
 <use sigma.png>
-Package pdftex.def Info: sigma.png  used on input line 277.
-(pdftex.def)             Requested size: 370.2541pt x 144.10576pt.
-<alpha.png, id=175, 1004.553pt x 390.9807pt>
+Package pdftex.def Info: sigma.png  used on input line 283.
+(pdftex.def)             Requested size: 248.6009pt x 131.2177pt.
+<alpha.png, id=158, 554.3109pt x 304.9794pt>
 File: alpha.png Graphic file (type png)
 <use alpha.png>
-Package pdftex.def Info: alpha.png  used on input line 278.
-(pdftex.def)             Requested size: 370.2541pt x 144.10576pt.
-<ell.png, id=176, 1003.8303pt x 492.8814pt>
+Package pdftex.def Info: alpha.png  used on input line 284.
+(pdftex.def)             Requested size: 248.6009pt x 136.77875pt.
+<ell.png, id=159, 582.85754pt x 304.9794pt>
 File: ell.png Graphic file (type png)
 <use ell.png>
-Package pdftex.def Info: ell.png  used on input line 279.
-(pdftex.def)             Requested size: 370.2541pt x 181.79167pt.
-<sigma_etax1.png, id=177, 1003.8303pt x 771.1209pt>
+Package pdftex.def Info: ell.png  used on input line 285.
+(pdftex.def)             Requested size: 248.6009pt x 130.08221pt.
+ [4] [5 <./figPLL.pdf> <./figPLL2.pdf>]
+<sigma_etax1.png, id=287, 1006.67859pt x 435.74559pt>
 File: sigma_etax1.png Graphic file (type png)
 <use sigma_etax1.png>
-Package pdftex.def Info: sigma_etax1.png  used on input line 287.
-(pdftex.def)             Requested size: 370.2541pt x 284.41602pt.
- [5 <./figPLL.pdf> <./figPLL2.pdf
-
-pdfTeX warning: pdflatex (file ./figPLL2.pdf): PDF inclusion: multiple pdfs wit
-h page group included in a single page
->] [6 <./sigma.png> <./alpha.png> <./ell.png>]
-<sigma_B.png, id=206, 1003.8303pt x 466.1415pt>
+Package pdftex.def Info: sigma_etax1.png  used on input line 338.
+(pdftex.def)             Requested size: 370.2541pt x 160.26588pt.
+<sigma_etax_delta.png, id=288, 1011.78pt x 433.62pt>
+File: sigma_etax_delta.png Graphic file (type png)
+<use sigma_etax_delta.png>
+Package pdftex.def Info: sigma_etax_delta.png  used on input line 344.
+(pdftex.def)             Requested size: 370.2541pt x 158.68352pt.
+ [6 <./sigma.png> <./alpha.png> <./ell.png>] [7 <./sigma_etax1.png> <./sigma_et
+ax_delta.png>]
+<sigma_B.png, id=318, 1009.2293pt x 439.57164pt>
 File: sigma_B.png Graphic file (type png)
 <use sigma_B.png>
-Package pdftex.def Info: sigma_B.png  used on input line 344.
-(pdftex.def)             Requested size: 370.2541pt x 171.92908pt.
- [7 <./sigma_etax1.png>] [8 <./sigma_B.png>]
-<mot1.png, id=242, 685.8423pt x 637.4214pt>
+Package pdftex.def Info: sigma_B.png  used on input line 382.
+(pdftex.def)             Requested size: 370.2541pt x 161.26395pt.
+ [8 <./sigma_B.png>]
+<mot1.png, id=338, 713.5458pt x 496.254pt>
 File: mot1.png Graphic file (type png)
 <use mot1.png>
-Package pdftex.def Info: mot1.png  used on input line 434.
-(pdftex.def)             Requested size: 224.79973pt x 208.92967pt.
-<mot2.png, id=243, 677.8926pt x 637.4214pt>
+Package pdftex.def Info: mot1.png  used on input line 444.
+(pdftex.def)             Requested size: 248.6009pt x 172.89641pt.
+<mot2.png, id=339, 714.5094pt x 494.3268pt>
 File: mot2.png Graphic file (type png)
 <use mot2.png>
-Package pdftex.def Info: mot2.png  used on input line 436.
-(pdftex.def)             Requested size: 222.15247pt x 208.88104pt.
- [9] [10 <./mot1.png> <./mot2.png>] [11] (./arxiv_ss.bbl [12])
-[13{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [14] [15]
-(./arxiv_ss.aux)
+Package pdftex.def Info: mot2.png  used on input line 445.
+(pdftex.def)             Requested size: 248.6009pt x 171.99113pt.
+
+[9 <./mot1.png> <./mot2.png>] [10] [11] (./arxiv_ss.bbl [12]) [13] [14{/usr/sha
+re/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [15] (./arxiv_ss.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -684,13 +684,13 @@ Package rerunfilecheck Info: File `arxiv_ss.out' has not changed.
 (rerunfilecheck)             Checksum: 04153F23C1FF61DE673535E245A72AA3;1947.
  ) 
 Here is how much of TeX's memory you used:
- 14226 strings out of 468581
- 208506 string characters out of 5446528
- 689868 words of memory out of 5000000
- 42639 multiletter control sequences out of 15000+600000
+ 14219 strings out of 468581
+ 208570 string characters out of 5446528
+ 684268 words of memory out of 5000000
+ 42634 multiletter control sequences out of 15000+600000
  641965 words of font info for 96 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
- 73i,14n,77p,2023b,658s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 73i,14n,77p,4010b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texm
 f/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/publi
 c/amsfonts/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbx9
@@ -713,10 +713,10 @@ lic/amsfonts/cm/cmsy9.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmti
 exmf/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/typ
 e1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-s
 uper/sfrm1000.pfb>
-Output written on arxiv_ss.pdf (15 pages, 3172878 bytes).
+Output written on arxiv_ss.pdf (15 pages, 2354447 bytes).
 PDF statistics:
- 518 PDF objects out of 1000 (max. 8388607)
- 412 compressed objects within 5 object streams
- 98 named destinations out of 1000 (max. 500000)
- 136 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 623 PDF objects out of 1000 (max. 8388607)
+ 445 compressed objects within 5 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
 
