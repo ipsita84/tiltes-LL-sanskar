@@ -35,7 +35,7 @@ def fig_sigma_B_inset(out):
         # main panel
         C.style(ax, r'$\tilde{\mathcal{B}}$', r'$\tilde{\sigma}_{xx}$')
         ax.set_xlim(-1e-3, 1e-3); ax.set_ylim(-0.005, 0.29)
-        ax.set_title(r'$\tilde{\beta}=%s,\ \eta_x=%g$' % (C.sci(beta), C.ETA), fontsize=25)
+        ax.set_title(r'$\tilde{\beta}=%s,\ \eta_x=%g$' % (C.sci(beta), C.ETA), fontsize=20)
         ax.ticklabel_format(axis='x', style='sci', scilimits=(0, 0))
         ax.xaxis.get_offset_text().set_fontsize(18)             # "1e-3"
 
@@ -50,7 +50,7 @@ def fig_sigma_B_inset(out):
 
     plt.tight_layout(); plt.subplots_adjust(bottom=0.24)
     C.legend_below_fig(fig, axs[0], 4)
-    plt.savefig(f'{out}/sigma_B_sym_inset.png', dpi=170, bbox_inches='tight'); plt.close()
+    plt.savefig(f'{out}/sigma_B.png', dpi=170, bbox_inches='tight'); plt.close()
 
 
 if __name__ == '__main__':

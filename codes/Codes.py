@@ -25,7 +25,7 @@ REALISTIC PARAMETERS USED (v = 0.0015 -> v_x = 4.5e5 m/s, eps0 = 2.08 eV):
     level spacing at kx=0 between n=0..6 and n+1: 15 -> 6.8 meV  (> hbar/tau = 6.6 meV)
 KX WINDOWS (modelling choice, stated in the captions):
     [0, 1e-3]        for sigma/alpha/ell vs mu, sigma vs B, Mott/WF
-    [-0.023, 0.023]  for sigma vs eta_x (sigma(eta_x=0) vanishes in the narrow window)
+    [-0.023, 0.023]  for sigma vs eta_x and delta sigma vs eta_x (sigma(eta_x=0) vanishes in the narrow window)
 Usage:  python Codes_new.py [outdir] [fig1 fig2 fig3 ...]     (default: all, outdir = ./figs)
 """
 import os, sys
@@ -107,9 +107,9 @@ def curves(eta, Bt, kwin, beta, mus, Emax, fine=40):
     return responses(Eg, W, dE, beta, np.asarray(mus)), (Eg, W, dE)
 
 # ------------------------------------------------------------------ plotting style (old style, with panel titles and legends)
-def style(ax, xl, yl, fs=22):
+def style(ax, xl, yl, fs=22, tick_fs=15):
     ax.set_xlabel(xl, fontsize=fs); ax.set_ylabel(yl, fontsize=fs)
-    ax.tick_params(direction='in', top=True, right=True, labelsize=15); ax.minorticks_on()
+    ax.tick_params(direction='in', top=True, right=True, labelsize=tick_fs); ax.minorticks_on()
     ax.grid(True, which='major', linestyle='--', linewidth=0.9, color='#444444', alpha=0.8)
     ax.grid(True, which='minor', linestyle=':', linewidth=0.6, color='#666666', alpha=0.6)
 
@@ -169,6 +169,23 @@ def fig_sigma_eta(out):
     plt.tight_layout(); plt.subplots_adjust(bottom=0.24); legend_below_fig(fig, axs[0], 4)
     plt.savefig(f'{out}/sigma_etax1.png', dpi=170, bbox_inches='tight'); plt.close()
 
+# ------------------------------------------------------------------ delta sigma vs eta_x (Fig. 5)
+# delta sigma = sigma_xx(eta_x)/sigma_xx(eta_x=0) - 1, symmetric-log y-axis, linear for |delta sigma| < 1.
+# Same parameters, k_x window and legend placement as sigma vs eta_x (Fig. 4); larger axis ticks.
+def fig_sigma_eta_delta(out):
+    mus4 = [0.01, 0.02, 0.03, 0.04]; etas = np.linspace(-0.99, 0.99, 150)
+    fig, axs = plt.subplots(1, 2, figsize=(14, 6), facecolor='white')
+    for ax, beta in zip(axs, (200, 1000)):
+        S = np.array([curves(e, B0, WIN_B, beta, mus4, 0.08, fine=20)[0][0] for e in etas])
+        S0 = curves(0.0, B0, WIN_B, beta, mus4, 0.08, fine=20)[0][0]
+        D = S/S0[None, :] - 1.0
+        for m in range(4): ax.plot(etas, D[:, m], color=COLS[m], linewidth=3, label=r'$\tilde{\mu}=%g$' % mus4[m])
+        style(ax, r'$\eta_x$', r'$\delta\sigma$', tick_fs=20)
+        ax.set_yscale('symlog', linthresh=1.0); ax.set_xlim(-1, 1)
+        ax.set_title(r'$\tilde{\beta}=%s$' % sci(beta), fontsize=25)
+    plt.tight_layout(); plt.subplots_adjust(bottom=0.24); legend_below_fig(fig, axs[0], 4)
+    plt.savefig(f'{out}/sigma_etax_delta.png', dpi=170, bbox_inches='tight'); plt.close()
+
 # ------------------------------------------------------------------ Mott / Wiedemann-Franz
 def fig_mott(out):
     beta = 1e4; lo, hi = 0.03, 0.048; h = 4e-6
@@ -197,6 +214,6 @@ def print_si():
 
 if __name__ == '__main__':
     out = sys.argv[1] if len(sys.argv) > 1 else 'figs'
-    which = sys.argv[2:] or ['fig_transport', 'fig_sigma_B', 'fig_sigma_eta', 'fig_mott']
+    which = sys.argv[2:] or ['fig_transport', 'fig_sigma_B', 'fig_sigma_eta', 'fig_sigma_eta_delta', 'fig_mott']
     os.makedirs(out, exist_ok=True); print_si()
     for w in which: print('running', w); globals()[w](out)

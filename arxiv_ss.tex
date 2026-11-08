@@ -73,7 +73,7 @@ We investigate the transport signatures of pseudo-Landau levels (PLLs) in two-di
 \vspace{0.5em}
 \noindent Keywords: tilted Dirac cones; pseudomagnetic fields; pseudo-Landau levels; strain engineering; thermoelectric transport.
 
-% \tableofcontents
+\tableofcontents
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -93,7 +93,7 @@ The pseudomagnetic field must not be confused with a real magnetic field, and se
 
 
 
-In this paper, we will study the nature of the bulk linear response arising from the dispersive PLLs of tilted Dirac cones. The schematic experimental set-up is shown in Fig.~\ref{figdis}(b). Expanding upon earlier works \cite{strained-dirac-franz, complex-LL-strained-graphene}, our main aim is to quantify the effects arising from the additional ingredient of tilting the spectra. The new ingredients, compared with Refs.~\cite{strained-dirac-franz, complex-LL-strained-graphene}, are the tilt-induced contribution to the group velocity of the PLLs, the computation of the thermoelectric and thermal coefficients, and the test of the Mott relation and the Wiedemann-Franz law. For $\eta_x=0$, the spectrum reduces to the dispersive PLLs of the untilted anisotropic cone, and all the results below reduce to those of the untilted case. Scanning tunnelling spectroscopy of strained graphene nanobubbles \cite{levy10} has resolved sequences of PLLs, which are consistent with the Dirac-like ladder that our spectrum reproduces at leading order [cf. Sec.~\ref{secll}]. The dispersion in $k_x$, which is the central ingredient for the longitudinal response, is not accessed by those experiments. 
+In this paper, we will study the nature of the bulk linear response arising from the dispersive PLLs of tilted Dirac cones. The schematic experimental set-up is shown in Fig.~\ref{figdis}(b). Expanding upon earlier works \cite{strained-dirac-franz, complex-LL-strained-graphene}, our main aim is to quantify the effects arising from the additional ingredient of tilting the spectra. The new ingredients, compared with Refs.~\cite{strained-dirac-franz, complex-LL-strained-graphene}, are the tilt-induced contribution to the group velocity of the PLLs, the computation of the thermoelectric and thermal coefficients, and the test of the Mott relation and the Wiedemann-Franz (WF) law. For $\eta_x=0$, the spectrum reduces to the dispersive PLLs of the untilted anisotropic cone, and all the results below reduce to those of the untilted case. Scanning tunnelling spectroscopy of strained graphene nanobubbles \cite{levy10} has resolved sequences of PLLs, which are consistent with the Dirac-like ladder that our spectrum reproduces at leading order [cf. Sec.~\ref{secll}]. The dispersion in $k_x$, which is the central ingredient for the longitudinal response, is not accessed by those experiments. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -264,9 +264,9 @@ we generate $ \bs{\mathcal B} = -\,{\mathcal B} \, \bs{\hat z}$, which acts on t
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure*}[t!]
 \centering
-%\subfigure[]{\includegraphics[width= 0.6 \textwidth]{figPLL-notilt}}
-\subfigure[]{\includegraphics[width= 0.75 \textwidth]{figPLL}}
-\subfigure[]{\includegraphics[width= 0.75 \textwidth]{figPLL2}}
+\includegraphics[width= 0.75 \textwidth]{fig_PLL_comb}
+%\subfigure[]{\includegraphics[width= 0.75 \textwidth]{figPLL}}
+%\subfigure[]{\includegraphics[width= 0.75 \textwidth]{figPLL2}}
 \caption{Dispersion of the PLLs for some chosen parameters shown in the plot-labels. The valley is $\xi=+$ in the left column and $\xi=-$ in the right column of each panel.\label{fig:spectrum_B}}
 \end{figure*}
 %%%%%%%%%%%%%%%%%%%5
@@ -276,16 +276,6 @@ we generate $ \bs{\mathcal B} = -\,{\mathcal B} \, \bs{\hat z}$, which acts on t
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Pseudo-Landau levels}
 \label{secll}
-
-%%%%%%%%%%%%%%%%
-\begin{figure*}[th!]
-\centering
-\includegraphics[width=0.47\textwidth]{sigma}
-\includegraphics[width=0.47\textwidth]{alpha} \vspace{0.5 cm}
-\includegraphics[width=0.47\textwidth]{ell}
-\caption{\label{fig:transport}Strained tilted Dirac cone with $\xi=+$: $\tilde \sigma_{xx}$, $\tilde \alpha_{xx}$, and $\tilde \ell_{xx}$ as functions of $\tilde \mu$, normalised by $\tau$. The ratio of the velocities is $v_y/v_x=0.8$.}
-\end{figure*}
-%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -303,9 +293,6 @@ Since $k_x$ remains a good quantum number (because of unbroken translation symme
 \begin{align}
 & \frac{  E^{\xi}_{n, \rm{si}} (k_x, \mathcal B) } {v_x} =  
 \eta_x \,   k_x
-% +  \text{si} \, \tilde E^\xi_n (k_x) \,, 
-%%%%%%%%%%%%
-%\quad \tilde E^\xi_n (k_x) =  
 + \,\text{si}\,\sqrt{ 2\,|\zeta|\,(n+1) \left (\xi\,k_x \, \tilde r_\xi + s_{-\xi} \, s_\xi \right ) - \tilde r_\xi^2 \, \zeta^2\,(n+1)^2 }  \,,\nn
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 & \text{ where } \text{si} = \pm \,, \quad
@@ -332,25 +319,8 @@ Since $n\in \lbrace 0 \rbrace \cup \mathbb{Z}^+$, with an upper-bound of $
 to take negative values as well. This happens when $ \eta_x \,  k_x  > \sqrt{2\,|\zeta|\,(n+1) \left (\xi\,k_x \, \tilde r_\xi + s_{-\xi} \, s_\xi \right )} $. Similarly, for $\eta_x<0$, we end up with negative values for $ E^\xi_{n, +}
 ( k_x, \mathcal B )$ as well.
 
-%%%%%%%%%%%%%%%%
-\begin{figure*}[t!]
-\centering
-\includegraphics[width= 0.7 \textwidth]{sigma_etax1}
-\caption{\label{figsigeta}Strained tilted Dirac cone with $\xi=+$: $\tilde\sigma_{xx}$ as a function of $\eta_x$. The parameters are $\tilde{\mathcal B}=2\times10^{-4}$, $v_y/v_x=0.8$, and $|a_0\,k_x|\le0.023$.}
-\end{figure*}
-%%%%%%%%%%%%%%%%
-\begin{figure*}[t!]
-\centering
-\includegraphics[width= 0.7 \textwidth]{sigma_etax_delta}
-\caption{\label{figdelsig}Strained tilted Dirac cone with $\xi=+$: $\delta\sigma\equiv\sigma_{xx}(\eta_x)/\sigma_{xx}(\eta_x=0)-1$ as a function of $\eta_x$, on a symmetric logarithmic scale that is linear for $|\delta\sigma|<1$. The parameters are $\tilde{\mathcal B}=2\times10^{-4}$, $v_y/v_x=0.8$, and $|a_0\,k_x|\le0.023$.}
-\end{figure*}
-%%%%%%%%%%%%%%%%%%%
 
-
-
-
-We represent the unique features of the PLLs by Fig.~\ref{fig:spectrum_B} for some representative parameter values. There, we observe the dispersive Landau levels, where the $\eta_x$-dependent term causes a tilt in the overall spectrum.
-The most intriguing nature that is revealed comprises the PLLs forming closed curves rather than dispersing out indefinitely as $ |k_x|$ is cranked up. Of course there also exists a lone PLL in the form of a line (not closed) --- this one represents a non-dispersive or flat band in the absence of tilting [cf. the red lines in Fig.~\ref{fig:spectrum_B}(b)]. Furthermore, the range of PLL-curves is more expanded for the $D$-valley compared to the $D^\prime$-valley, showing that the system is not valley-symmetric --- this is a consequence of the shifting of the Dirac points under strain.
+We represent the unique features of the PLLs by Fig.~\ref{fig:spectrum_B} for some representative parameter values. There, we observe the dispersive Landau levels, where the $\eta_x$-dependent term causes a tilt in the overall spectrum. There exists a lone PLL, which represents a non-dispersive or flat band in the absence of tilting [cf. the red lines in Fig.~\ref{fig:spectrum_B}(b)]. Furthermore, the PLL curves show that the system is not valley-symmetric.
 
 
 The physical content of Eq.~\eqref{eqevals} can be summarised as follows. For $\xi=+$ and small $\mathcal B$, the levels are
@@ -359,32 +329,29 @@ The physical content of Eq.~\eqref{eqevals} can be summarised as follows. For $\
 \end{align}
 At $k_x=0$ and for $n\gg1$, this reduces to the anisotropic Dirac ladder $\sqrt{2\,n\,v_x\,v_y\,e\,|\mathcal B|}$. Four ingredients are encoded in the full expression. First, the term $\eta_x\,k_x$ is a rigid tilt of all levels. It multiplies the identity matrix, and therefore changes neither the eigenfunctions nor the number of states per level, but it gives every level the group velocity $v_x\,\eta_x$ in addition to that of the untilted dispersion. Second, the factor $1+3\,a_0\,k_x/2$ stems from the strain-induced renormalisation of the velocities and from the terms of order $a_0\,k_x$ of the lattice, and it produces the dispersion of the untilted PLLs. Third, the valley index enters through $s_\xi$ and $r_\xi$, which is the origin of the valley asymmetry visible in Fig.~\ref{fig:spectrum_B}. Fourth, the index $n$ has a finite upper bound, whose meaning is discussed in Sec.~\ref{secvalid}.
 
-The PLLs are normalisable bound states, and not artefacts of the hybrid representation. Since the strain depends only on $y$, translation invariance along $x$ is intact and $k_x$ is a good quantum number, while the $y$-dependence is solved exactly in the Appendix. The eigenfunctions are generalised Laguerre polynomials multiplied by exponentially decaying factors. They vanish at the singular point $y=y^\xi_{\rm sg}$, where the coefficient of $k_y$ in $d^\xi_y$ vanishes, and they are localised in $y$ over a length of the order of $\ell_{\mathcal B}$ around a centre that depends on $k_x$. In the semiclassical picture, they correspond to cyclotron-like orbits whose guiding centre drifts along $x$ with the group velocity $v^{\xi,{\rm si}}_x(n;k_x)$ [Eq.~\eqref{eqgv}]. In a uniform real field, the energy of a level does not depend on $k_x$, because the translation of the guiding centre along $y$ is a symmetry. The strain does not have this symmetry. The local hopping amplitudes, and with them the local velocities, vary with $y$, and the energy of a state depends on where along $y$ it is located, that is on $k_x$. The PLLs are therefore dispersive even without tilt, and this part of the dispersion is a lattice effect of order $a_0\,k_x$. This is why the bulk longitudinal conductivity can be nonzero. At $T=0$, the electrical conductivity of a valley is
+The PLLs are normalisable bound states, and not artefacts of the hybrid representation. Since the strain depends only on $y$, translation invariance along $x$ is intact and $k_x$ is a good quantum number, while the $y$-dependence is solved exactly in the Appendix. The eigenfunctions are generalised Laguerre polynomials multiplied by exponentially decaying factors. They vanish at the singular point $y=y^\xi_{\rm sg}$, where the coefficient of $k_y$ in $d^\xi_y$ vanishes, and they are localised in $y$ over a length of the order of $\ell_{\mathcal B}$ around a centre that depends on $k_x$. In the semiclassical picture, they correspond to cyclotron-like orbits whose guiding centre drifts along $x$ with the group velocity $v^{\xi,{\rm si}}_x(n;k_x)$ [cf. Eq.~\eqref{eqgv}]. In a uniform real field, the energy of a level does not depend on $k_x$, because the translation of the guiding centre along $y$ is a symmetry. The strain does not have this symmetry. The local hopping amplitudes, and with them the local velocities, vary with $y$, and the energy of a state depends on where along $y$ it is located, that is on $k_x$. The PLLs are therefore dispersive even without tilt, and this part of the dispersion is a lattice effect of order $a_0\,k_x$. This is why the bulk longitudinal conductivity can be nonzero. At $T=0$, the electrical conductivity of a valley is
 \begin{align}
 \sigma^\xi_{xx}=\frac{e^2\,\tau}{L_y}\sum_{n,\,{\rm si}}\sum_{k_{\rm F}}\frac{|v^{\xi,{\rm si}}_x(n;k_{\rm F})|}{2\,\pi}\,,\label{eqsigT0}
 \end{align}
 where the sum over $k_{\rm F}$ runs over the Fermi points of each band. Every dispersive level that crosses the chemical potential contributes, while flat levels, for which $v_x=0$, do not.
 
-
-
+%%%%%%%%%%%%%%%%
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=0.49\textwidth]{sigma}
+\includegraphics[width=0.49\textwidth]{alpha} \vspace{1 cm}
+\includegraphics[width=0.49\textwidth]{ell}
+\caption{\label{fig:transport}Strained tilted Dirac cone with $\xi=+$: $\tilde \sigma_{xx}$, $\tilde \alpha_{xx}$, and $\tilde \ell_{xx}$ as functions of $\tilde \mu$, normalised by $\tau$. The ratio of the velocities is $v_y/v_x=0.8$.}
+\end{figure*}
+%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%
 \section{Transport Properties within the semiclassical Boltzmann formalism}
 \label{sectransport}
 
 
-Having established the pseudo-Landau level (PLL) spectrum for tilted Dirac cones under strain, we now investigate the resulting transport properties within the semiclassical Boltzmann formalism. Unlike conventional Landau levels, the PLLs obtained here are, apart from being dispersive, tilted as well in momentum $k_x$, which leads to qualitatively different transport behaviour in set-ups shown in Fig.~\ref{fig:transport}.
-In particular, the finite dispersion of the energy spectrum ensures a non-vanishing group-velocity along the $x$-direction, in contrast to the flat Landau levels of conventional quantum Hall systems. As a result, the system exhibits finite longitudinal conductivity in the bulk. The tilting of the PLL spectra provides an extra knob to tune the qualitative nature of the bulk linear response.
+Having established the pseudo-Landau level (PLL) spectrum for tilted Dirac cones under strain, we now investigate the resulting transport properties within the semiclassical Boltzmann formalism. Unlike conventional Landau levels, the PLLs obtained here, apart from being dispersive, are tilted in $k_x$ as well. This leads to qualitatively different transport behaviour in the set-up shown in Fig.~\ref{figdis}(b). In particular, the finite dispersion of the energy spectrum ensures a non-vanishing group-velocity along the $x$-direction, in contrast to the flat Landau levels of conventional quantum-Hall systems. As a result, the system exhibits finite longitudinal conductivity in the bulk. The tilting of the PLL spectra provides an extra knob to tune the qualitative nature of the bulk linear response.
 
-%%%%%%%%%%%%%%%%
-\begin{figure*}[t!]
-\centering
-\includegraphics[width= 0.7 \textwidth]{sigma_B}
-\caption{\label{figsigB}Strained tilted Dirac cone with $\xi=+$: $\tilde\sigma_{xx}$ as a function of $\tilde{\mathcal B}$. The parameters are $v_y/v_x=0.8$ and $0\le a_0\,k_x\le10^{-3}$.}
-\end{figure*}
-%%%%%%%%%%%%%%%%%%%
-
-%\subsection{Longitudinal linear response}
 
 Within the semiclassical Boltzmann formalism, the longitudinal dc electrical conductivity is given by~\cite{arovas, ips-kush-review}
 \begin{align}
@@ -412,58 +379,67 @@ respectively.
 
 We comment on the status of this approach. Eq.~\eqref{eqalphaell} contains the intraband (Fermi-surface) contribution to the response, evaluated with the exact PLL spectrum and velocities. The effect of the quantisation on the spectrum is therefore fully retained. The semiclassical elements are the description of the scattering by a relaxation time and the neglect of the interband contributions, which involve the matrix elements of $v_x$ between different PLLs. In natural units ($\hbar=k_{\rm B}=1$), these contributions are smaller than the intraband one by a factor of the order of $(\tau\,\Delta E)^{-2}$, where $\Delta E$ is the spacing between neighbouring PLLs. The approach is therefore justified when $1/\tau\ll\Delta E$ and $1/\tau\ll\mu$, which is the regime in which the PLLs are resolved. For $1/\tau\gtrsim\Delta E$, the disorder broadening merges the levels, the PLL features disappear, and the interband terms become important. Our results do not apply there. Phase-coherent effects, such as weak localisation, are not captured either.
 
-The relaxation time is a phenomenological parameter, which we take to be independent of energy, momentum, temperature and $\mathcal B$. The plotted quantities $\tilde\sigma_{xx}$, $\tilde\alpha_{xx}$ and $\tilde\ell_{xx}$ are normalised by $\tau$, and their shapes do not depend on its value. An energy-dependent $\tau(\varepsilon)$ enters the integrals as a weight. At $T=0$, the conductivity then becomes $\sigma^\xi_{xx}=(e^2/L_y)\sum_{n,\,{\rm si}}\sum_{k_{\rm F}}\tau(\mu)\,|v_x|/(2\,\pi)$. The positions of the features are fixed by the band structure, while their heights are reweighted. The Mott relation and the Wiedemann-Franz law remain valid for any smooth $\tau(\varepsilon)$ as long as the scattering is elastic. A dependence of $\tau$ on the band index $n$ and on $k_x$ through the overlap of the PLL wave functions would modify the weights of the individual bands in the same manner. The relaxation-time approximation replaces the collision integral by $-\delta f/\tau$. For anisotropic and tilted spectra, and for strongly anisotropic scattering such as small-angle scattering, the transport time differs from the quantum lifetime. The solution of the linearised Boltzmann equation with the full collision integral, or a variational treatment \cite{ziman}, would then change the magnitudes by factors of order unity. It requires the matrix elements of the impurity potential between PLL states, which are overlaps of the Laguerre eigenfunctions of the Appendix, and it lies beyond the scope of this work.
+%%%%%%%%%%%%%%%%
+\begin{figure*}[t!]
+\centering
+\includegraphics[width= 0.8 \textwidth]{sigma_etax1}
+\caption{\label{figsigeta}Strained tilted Dirac cone with $\xi=+$: $\tilde\sigma_{xx}$ as a function of $\eta_x$. The parameters are $\tilde{\mathcal B}=2\times10^{-4}$, $v_y/v_x=0.8$, and $|a_0\,k_x|\le0.023$.}
+\end{figure*}
+%%%%%%%%%%%%%%%%
+
+The relaxation time is a phenomenological parameter, which we take to be independent of energy, momentum, temperature and $\mathcal B$. The plotted quantities $\tilde\sigma_{xx}$, $\tilde\alpha_{xx}$ and $\tilde\ell_{xx}$ are normalised by $\tau$, and their shapes do not depend on its value. An energy-dependent $\tau(\varepsilon)$ enters the integrals as a weight. At $T=0$, the conductivity then becomes $\sigma^\xi_{xx}=(e^2/L_y)\sum_{n,\,{\rm si}}\sum_{k_{\rm F}}\tau(\mu)\,|v_x|/(2\,\pi)$. The positions of the features are fixed by the band structure, while their heights are reweighted. The Mott relation and the WF law remain valid for any smooth $\tau(\varepsilon)$ as long as the scattering is elastic. A dependence of $\tau$ on the band index $n$ and on $k_x$ through the overlap of the PLL wave functions would modify the weights of the individual bands in the same manner. The relaxation-time approximation replaces the collision integral by $-\delta f/\tau$. For anisotropic and tilted spectra, and for strongly anisotropic scattering such as small-angle scattering, the transport time differs from the quantum lifetime. The solution of the linearised Boltzmann equation with the full collision integral, or a variational treatment \cite{ziman}, would then change the magnitudes by factors of order unity. It requires the matrix elements of the impurity potential between PLL states, which are overlaps of the Laguerre eigenfunctions of the Appendix, and it lies beyond the scope of this work.
 
 Disorder and temperature act in a similar manner on the PLL features. The thermal broadening of the response is of the order of a few $T$, and the disorder broadening of the levels is of the order of $1/\tau$. The individual PLL features are resolved when both are smaller than $\Delta E$. The temperature dependence is displayed in Fig.~\ref{fig:transport}, where the peaks broaden with decreasing $\tilde\beta$. The interband terms and the level broadening are not included in the Boltzmann treatment, and we do not study them in this work.
 
+%%%%%%%%%%
+\begin{figure*}[t!]
+\centering
+\includegraphics[width= 0.8 \textwidth]{sigma_etax_delta}
+\caption{\label{figdelsig}Strained tilted Dirac cone with $\xi=+$: $\delta\sigma\equiv\sigma_{xx}(\eta_x)/\sigma_{xx}(\eta_x=0)-1$ as a function of $\eta_x$, on a symmetric logarithmic scale that is linear for $|\delta\sigma|<1$. The parameters are $\tilde{\mathcal B}=2\times10^{-4}$, $v_y/v_x=0.8$, and $|a_0\,k_x|\le0.023$.}
+\end{figure*}
+%%%%%%%%%%%%%%%%%%%
 
 The explicit form of the group-velocity along the $x$-direction follows from differentiating Eq.~\eqref{eqevalssmall}. We define
 \begin{align}
 \Lambda_n \equiv 2\,|\zeta|\,(n + 1)\,, \quad
 w_\xi \equiv \xi\,k_x\,\tilde r_\xi + s_{-\xi}\,s_\xi = 1 + \frac{3\,\xi\,a_0\,k_x}{2}\,, \notag
 \end{align}
-where we used $s_\xi\,s_{-\xi} = 1 - a_0^2\,k_x^2/4$. The derivative of $w_\xi$ is $\partial_{k_x} w_\xi = 3\,\xi\,a_0/2$. The group-velocity is then
+where we have used $s_\xi\,s_{-\xi} = 1 - a_0^2\,k_x^2/4$. The derivative of $w_\xi$ is $\partial_{k_x} w_\xi = 3\,\xi\,a_0/2$. The group-velocity is then
 %%%%%%%%%%%%%%%%
 \begin{align}
 v^{\xi, \text{si}}_x (n; k_x) \equiv \partial_{k_x}  E^{\xi}_{n, \rm{si}} (k_x, \mathcal B)  
-= v_x \left[ \eta_x +\, \mathrm{si}\, \frac{ \Lambda_n\,\partial_{k_x} w_\xi }
-{ 2 \sqrt{ \Lambda_n\,w_\xi } } \right]
-= v_x \left[ \eta_x +\, \mathrm{si}\, \frac{3\,\xi\,a_0}{4} \sqrt{ \frac{ \Lambda_n }{ w_\xi } } \right].
+= v_x \left ( \eta_x +\, \mathrm{si}\, \frac{ \Lambda_n\,\partial_{k_x} w_\xi }
+{ 2\, \sqrt{ \Lambda_n\,w_\xi } } \right )
+= v_x \left ( \eta_x +\, \mathrm{si}\, \frac{3\,\xi\,a_0}{4} 
+\,\sqrt{ \frac{ \Lambda_n }{ w_\xi } } \right ).
 \label{eqgv}
 \end{align}
 %%%%%%%%%%%%%%%
-This expression is the derivative of the small-$\mathcal B$ form, and it is accurate when $\tilde r_\xi^2\,\Lambda_n \ll 4\,w_\xi$. The tilt enters the group-velocity as an additive term $v_x\,\eta_x$. The squared velocity in the transport integrals therefore contains a contribution proportional to $\eta_x^2$, a cross term linear in $\eta_x$ and the untilted part. This provides a direct way to tune the response via strain-induced modifications of the bandstructure. 
-%The linear dependence of the the Thermoelectric Coefficient on $( \,\epsilon_n - \mu \,)$, splits the integral into two with the first one over $\epsilon_n $ and other over $\mu$, which compete as $\mu$ varies and hence are asymmetric about the chemical potential which can be seen from the picture above.
-%%%%%%%%%%%%%%%%%
-For the ease of computation and plotting, we use the following variables: $ \tilde{\mathcal B }  = a_0^2 \, \mathcal B$, $\tilde \mu  = a_0 \, \mu/ v_x $, $\tilde k_x  = a_0 \, k_x $, $\tilde k_y =  a_0 \, k_y $, $\tilde y = y/a_0 $, $\tilde  E^{\xi}_{n, \rm{si}} (\tilde k_x, \tilde{\mathcal B} ) = a_0 \,  E^{\xi}_{n, \rm{si}} (k_x, \mathcal B) / v_x $, $\tilde \beta =  v_x\, \beta/a_0 $, $\tilde \sigma^\xi_{xx}  = L_y \, \sigma_{xx}^\xi / (\tau \, v_x ) $, $ \tilde \alpha^\xi_{xx}  = L_y \, \alpha_{xx}^\xi / (\tau \, v_x ) $, and $ \tilde \ell^\xi_{xx}  = a_0 \, L_y \, \ell_{xx}^\xi / ( \tau \, v_x^2 ) $. In what follows, we will focus on the valley with $\xi = + $ and, hence, we will remove the $\xi$-index everywhere to unclutter the notation.
-
-
-%%%%%%%%%%%%%
-\begin{figure*}[t!]
-\centering
-\includegraphics[width=0.47 \textwidth]{mot1}
-\includegraphics[width=0.47 \textwidth]{mot2} 
-\caption{\label{fig:compare}Strained tilted Dirac cone with $\xi=+$: comparison of the Mott relation (left) and the Wiedemann-Franz (WF) law (right) [cf. Eq.~\eqref{eqmott}] with the direct integrals [cf. Eq.~\eqref{eqalphaell}]. The parameters are $\tilde{\mathcal B}=2\times10^{-4}$, $\eta_x=0.7$, $v_y/v_x=0.8$, $\tilde\beta=10^{4}$, and $0\le a_0\,k_x\le10^{-3}$. The quantities are normalised as in Fig.~\ref{fig:transport}.}
-\end{figure*}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+This expression is the derivative of the small-$\mathcal B$ form, and it is accurate when $\tilde r_\xi^2\,\Lambda_n \ll 4\,w_\xi$. The tilt enters the group-velocity as an additive term $v_x\,\eta_x$. The squared velocity in the transport integrals therefore contains a contribution $\propto \eta_x^2$, a cross term linear-in-$\eta_x$, and the untilted part. This provides a direct way to tune the response via strain-induced modifications of the bandstructure. 
+For the ease of computation and plotting, we use the following variables: $ \tilde{\mathcal B }  = a_0^2 \, \mathcal B$, $\tilde \mu  = a_0 \, \mu/ v_x $, $\tilde k_x  = a_0 \, k_x $, $\tilde k_y =  a_0 \, k_y $, $\tilde y = y/a_0 $, $\tilde  E^{\xi}_{n, \rm{si}} (\tilde k_x, \tilde{\mathcal B} ) = a_0 \,  E^{\xi}_{n, \rm{si}} (k_x, \mathcal B) / v_x $, $\tilde \beta =  v_x\, \beta/a_0 $, $\tilde \sigma^\xi_{xx}  = L_y \, \sigma_{xx}^\xi / (\tau \, v_x ) $, $ \tilde \alpha^\xi_{xx}  = L_y \, \alpha_{xx}^\xi / (\tau \, v_x ) $, and $ \tilde \ell^\xi_{xx}  = a_0 \, L_y \, \ell_{xx}^\xi / ( \tau \, v_x^2 ) $. In what follows, we will focus on the valley with $\xi = + $ and, hence, we will remove the $\xi$-index everywhere to unclutter the notations.
 
 
 Some representative plots, as functions of $\mu$, are shown in Fig.~\ref{fig:transport} for several values of $\beta$. The electrical conductivity demonstrates sharp peaks as a function of $\mu$ --- albeit the peaks get progressively broadened as we go to higher temperatures (i.e., lower values of $\beta$) as the quantised bands of PLLs are exact only at $T = 0$ and a finite value of $T$ smears them out. Due to the extra factor of $(\varepsilon^{{\rm si }}_n - \mu)$ in the integral for $\alpha_{xx}$, compared to that for $ \sigma_{xx}$, each peak-like feature of the $\sigma_{xx}$-curves splits into a pair of asymmetric peaks in the $\alpha_{xx}$-curves. Analogously, due to the extra positive-definite factor of $(\varepsilon^{ {\rm si }}_n - \mu)^2 $ in the integral for $\ell_{xx}$, compared to that for $ \sigma_{xx}$, each peak-like feature of the $\sigma_{xx}$-curves splits into a pair of symmetric peaks in the $ \ell_{xx}$-curves. The spectrum in Eq.~\eqref{eqevals} depends on $\mathcal B$ only through $|\zeta|$. All three coefficients are therefore even functions of $\mathcal B$, and Fig.~\ref{fig:transport} shows $\tilde{\mathcal B}>0$ only.
 All these features are distinctly visible for higher and higher $\beta$-values, when thermal smearing gets minimised. 
 
 
-All the plotted quantities are dimensionless. Energies and temperatures are measured in units of $v_x/a_0$. The temperature then follows from $T=(v_x/a_0)/\tilde\beta$. The quantities $\tilde\sigma_{xx}$, $\tilde\alpha_{xx}$ and $\tilde\ell_{xx}$ are normalised by $\tau$, as defined above, and therefore do not depend on its value. The remaining parameters of each figure are stated in its panel labels and caption. The positions of the peaks follow approximately from the band edges of the PLLs. In the absence of tilt, and for small $a_0\,|k_x|$, the peaks recur whenever $\mu^2/(2\,v_x\,v_y\,e\,|\mathcal B|)$ crosses an integer. Their spacing in $|\mathcal B|^{-1}$ is then $2\,v_x\,v_y\,e/\mu^2$, up to corrections from the tilt and from the terms of order $a_0\,k_x$. The peaks are resolved as long as the thermal broadening is smaller than the spacing of the levels, which grows as $\sqrt{|\mathcal B|}$.
+All the plotted quantities are dimensionless. Energies and temperatures are expressed here in units of $v_x/a_0$. The temperature then follows from $T=(v_x/a_0)/\tilde\beta$. The quantities $\tilde\sigma_{xx}$, $\tilde\alpha_{xx}$ and $\tilde\ell_{xx}$ are normalised by $\tau$, as defined above, and therefore do not depend on its value. The parameters of each figure are stated in its label, caption, legends. The positions of the peaks follow approximately from the band edges of the PLLs. In the absence of tilt, and for small $a_0\,|k_x|$, the peaks recur whenever $\mu^2/(2\,v_x\,v_y\,e\,|\mathcal B|)$ crosses an integer. Their spacing in $|\mathcal B|^{-1}$ is then $2\,v_x\,v_y\,e/\mu^2$, up to corrections from the tilt and from the terms of order $a_0\,k_x$. The peaks are resolved as long as the thermal broadening is smaller than the spacing of the levels, which grows as $\sqrt{|\mathcal B|}$.
 
-For Fig.~\ref{fig:transport}, we take $v_x=1.5\times10^{-3}$ in units of the speed of light, which is $4.5\times10^{5}$ m/s, and $a_0=0.142$ nm. The unit of energy is then $\hbar\,v_x/a_0\simeq2.08$ eV. The values $\tilde\beta=10^{3}$, $5\times10^{3}$, and $10^{4}$ correspond to $T\simeq24$, $4.8$, and $2.4$ K, respectively. The value $\tilde{\mathcal B}=2\times10^{-4}$ corresponds to $\mathcal B\simeq6.5$ T, and the range $|\tilde\mu|\le0.048$ corresponds to $|\mu|\lesssim100$ meV. For $\tau=10^{-13}$ s, which is $\simeq152$ eV$^{-1}$ in natural units, we have $\hbar/\tau\simeq6.6$ meV. At $k_x=0$, the energy of the level $n$ follows from Eq.~\eqref{eqevals} as $\varepsilon_n=\sqrt{\Lambda_n-9\,\Lambda_n^2/16}$ in units of $v_x/a_0$. The spacing between the levels $n$ and $n+1$ is $15$ meV for $n=0$ and decreases to $6.8$ meV for $n=6$, where $n=6$ is the highest level within the plotted range. The condition $1/\tau\ll\Delta E$ is thus satisfied, albeit only marginally for the highest levels, and $k_{\rm B}\,T$ is smaller than $\Delta E$ for all three values of $\tilde\beta$.
+For the figures, we take $v_x=1.5\times10^{-3}$ in natural units, which is $4.5\times 10^{5}$ m/s in SI units, and $a_0=0.142$ nm. The unit of energy is then $\hbar\,v_x/a_0\simeq 2.08$ eV. In Fig.~\ref{fig:transport}, the values $\tilde\beta= 10^3$, $5\times 10^3$, and $10^4 $ correspond to $T\simeq24$ K, $4.8$ K, and $2.4$ K, respectively. The value $\tilde{\mathcal B}=2\times 10^{-4}$ corresponds to $\mathcal B \simeq 6.5$ T, and the range $|\tilde\mu|\le 0.048$ corresponds to $|\mu|\lesssim 100$ meV. For $\tau=10^{-13}$ s, which is $\simeq 152$ eV$^{-1}$ in natural units, we have $\hbar/\tau\simeq 6.6$ meV. At $k_x=0$, the energy of the level $n$ follows from Eq.~\eqref{eqevals} as $\varepsilon_n=\sqrt{\Lambda_n-9\,\Lambda_n^2/16}$ in units of $v_x/a_0$. The spacing between the levels $n$ and $n+1$ is $15$ meV for $n=0$ and decreases to $6.8$ meV for $n=6$, where $n=6$ is the highest level within the plotted range. The condition $1/\tau\ll\Delta E$ is thus satisfied and $k_{\rm B}\,T$ is smaller than $\Delta E$ for all three values of $\tilde\beta$. 
+%%%%%%
+The integration over $k_x$ is restricted to $0\le a_0\,k_x\le a_0\,k_{\rm c}$, where $a_0\,k_{\rm c}=10^{-3}$. Within this range, the levels in the plotted region increase monotonically with $k_x$, since $v^{\xi,{\rm si}}_x>0$ for $\eta_x>3\,a_0\sqrt{\Lambda_n/w_\xi}/4$ [cf. Eq.~\eqref{eqgv}]. A level then has a Fermi point only if $\mu$ lies between its energies at the two ends of the range. Every peak of $\tilde\sigma_{xx}$ therefore originates from the entry and the exit of a Fermi point at the ends of the range. At zero temperature, the height of a peak is $\simeq\eta_x/(2\,\pi)$ per level, up to corrections of relative order $\sqrt{\Lambda_n}/\eta_x$ [cf. Eq.~\eqref{eqsigT0}]. The width of a peak is $\simeq\eta_x\,a_0\,k_{\rm c}$ in units of $v_x/a_0$, and its position is set by $\varepsilon_n$ up to this width. The widths of the peaks and, hence, their overlaps thus depend on the cutoff $k_{\rm c}$.
 
-The integration over $k_x$ is restricted to $0\le a_0\,k_x\le a_0\,k_{\rm c}$, where $a_0\,k_{\rm c}=10^{-3}$. Within this range, the levels in the plotted region increase monotonically with $k_x$, since $v^{\xi,{\rm si}}_x>0$ for $\eta_x>3\,a_0\sqrt{\Lambda_n/w_\xi}/4$ [cf. Eq.~\eqref{eqgv}]. A level then has a Fermi point only if $\mu$ lies between its energies at the two ends of the range. Every peak of $\tilde\sigma_{xx}$ therefore originates from the entry and the exit of a Fermi point at the ends of the range. At zero temperature, the height of a peak is $\simeq\eta_x/(2\,\pi)$ per level, up to corrections of relative order $\sqrt{\Lambda_n}/\eta_x$ [cf. Eq.~\eqref{eqsigT0}]. The width of a peak is $\simeq\eta_x\,a_0\,k_{\rm c}$ in units of $v_x/a_0$, and its position is set by $\varepsilon_n$ up to this width. The widths of the peaks, and hence their overlap, thus depend on the cutoff $k_{\rm c}$.
+%%%%%%%%%%%%%%%%
+\begin{figure*}[t!]
+\centering
+\includegraphics[width= 0.85 \textwidth]{sigma_B}
+\caption{\label{figsigB}Strained tilted Dirac cone with $\xi=+$: $\tilde\sigma_{xx}$ as a function of $\tilde{\mathcal B}$. The parameters are $v_y/v_x=0.8$ and $0\le a_0\,k_x\le10^{-3}$.}
+\end{figure*}
+%%%%%%%%%%%%%%%%%%%
 
+The dependence on $\eta_x$ is depicted in Fig.~\ref{figsigeta}. The squared velocity in the transport integral contains terms $\propto\eta_x^2$, $\propto\eta_x$, and $\propto\eta_x^0$ [cf. Eq.~\eqref{eqgv}], and $\tilde\sigma_{xx}$ is therefore a parabola in $\eta_x$. For these parameters, the group-velocity of the untilted levels is small compared to $v_x\,\eta_x$, and $\tilde\sigma_{xx}$ at $\eta_x=0$ is correspondingly small. The curves are thus dominated by the term $\propto\eta_x^2$, and their minima lie close to $\eta_x=0$. The vertex is shifted to a small negative value of $\eta_x$, which indicates the presence of the term $\propto\eta_x$. The curves are asymmetric under $\eta_x\to-\eta_x$, with $\tilde\sigma_{xx}$ being larger for positive $\eta_x$. At the lower temperature, the curve for the smallest value of $\mu$ is strongly suppressed and develops wiggles, since $\mu$ lies below the energy of the lowest level at $k_x=0$. The other curves are close to their counterparts at the higher temperature.  The relative change $\delta\sigma\equiv\sigma_{xx}(\eta_x)/\sigma_{xx}(\eta_x=0)-1$ is shown in Fig.~\ref{figdelsig}. It spans several orders of magnitude, since $\sigma_{xx}(\eta_x=0)$ is small.
 
-
-%%%%%%%%%%%%%
-The dependence on $\eta_x$ is depicted in Fig.~\ref{figsigeta}. The squared velocity in the transport integral contains terms $\propto\eta_x^2$, $\propto\eta_x$, and $\propto\eta_x^0$ [cf. Eq.~\eqref{eqgv}], and $\tilde\sigma_{xx}$ is therefore a parabola in $\eta_x$. For these parameters, the group-velocity of the untilted levels is small compared to $v_x\,\eta_x$, and $\tilde\sigma_{xx}$ at $\eta_x=0$ is correspondingly small. The curves are thus dominated by the term $\propto\eta_x^2$, and their minima lie close to $\eta_x=0$. The vertex is shifted to a small negative value of $\eta_x$, which indicates the presence of the term $\propto\eta_x$. The curves are asymmetric under $\eta_x\to-\eta_x$, with $\tilde\sigma_{xx}$ being larger for positive $\eta_x$. At the lower temperature, the curve for the smallest value of $\mu$ is strongly suppressed and develops wiggles, since $\mu$ lies below the energy of the lowest level at $k_x=0$. The other curves are close to their counterparts at the higher temperature. The relative change $\delta\sigma\equiv\sigma_{xx}(\eta_x)/\sigma_{xx}(\eta_x=0)-1$ is shown in Fig.~\ref{figdelsig}. It spans several orders of magnitude, since $\sigma_{xx}(\eta_x=0)$ is small.
-%%%%%%%%%%
-Furthermore, we also illustrate the dependence of the strength of $ \sigma_{xx}$ on $\mathcal B $ through Fig.~\ref{figsigB}. We find that the response falls off rapidly with increasing values of $|\mathcal B |$, which can be traced back to the following: for the realistic values of $\mu $ we have used, the number of PLLs cut by the chemical potential, within a reasonable range of $k_x$ (which is the integration variable), decreases with rising $|\mathcal B|$. At the lower temperature, the curves also show oscillations, whose maxima lie close to the values of $\tilde{\mathcal B}$ for which a level crosses the chemical potential, i.e., $\tilde\mu^2\simeq2\,|\zeta|\,(n+1)$ [cf. Eq.~\eqref{eqevalssmall}], up to a shift of the order of $\eta_x\,a_0\,k_{\rm c}$. They are absent at the higher temperature, where the thermal broadening exceeds the spacing of the levels.
+Furthermore, we also illustrate the dependence of the strength of $ \sigma_{xx}$ on $\mathcal B $ through Fig.~\ref{figsigB}. We find that the response falls off rapidly with increasing values of $|\mathcal B |$, which can be traced back to the following: for the realistic values of $\mu $ we have used, the number of PLLs cut by the chemical potential, within a reasonable range of $k_x$ (which is the integration variable), decreases with rising $|\mathcal B|$. For the lower-temperature panel, the curves show oscillations, whose maxima lie close to the values of $\tilde{\mathcal B}$ for which a level crosses the chemical potential, i.e., $\tilde\mu^2\simeq2\,|\zeta|\,(n+1)$ [cf. Eq.~\eqref{eqevalssmall}], up to a shift of the order of $\eta_x\,a_0\,k_{\rm c}$. They are absent in the higher-temperature panel, where the thermal broadening exceeds the spacing of the levels.
 
 
 The dependence on the ratio $v_y/v_x$ enters the spectrum only through $\zeta=e\,\mathcal B\,v_y/v_x$. At leading order, a change of the ratio rescales the level spacing as $\sqrt{v_y/v_x}$ and the upper bound on $n$ as $v_x/v_y$, and it does not change the structure of the response. We have used $v_y/v_x=0.8$ as a representative value of moderate anisotropy. The effects of the strain and of the tilt can be separated in principle. The features that survive at $\eta_x=0$ are due to the strain. Since the spectrum depends on $\mathcal B$ only through $|\zeta|$, the response is even in $\mathcal B$, and reversing the strain gradient does not change it. The contributions $\propto\eta_x$ and $\propto\eta_x^2$ in Fig.~\ref{figsigeta} vanish at $\eta_x=0$, and the linear one is odd under the reversal of the tilt. They are therefore specific to the tilt, and they can be isolated by comparing measurements at two values of the tilt for the same strain profile.
@@ -471,9 +447,7 @@ The dependence on the ratio $v_y/v_x$ enters the spectrum only through $\zeta=e\
 
 
 
-
-
-Finally, we examine the validity of the Mott relation and the Wiedemann-Franz (WF) law in our strained system, which hold in metallic (or semimetallic) systems for $T  \rightarrow  0 $ in myriad situations \cite{ips-ruiz, ips-rsw-ph, ips-mwsm-floquet}. 
+Finally, we examine the validity of the Mott relation and the WF law in our strained system, which hold in metallic (or semimetallic) systems for $T  \rightarrow  0 $ in myriad situations \cite{ips-ruiz, ips-rsw-ph, ips-mwsm-floquet}. 
 These two relations are captured by
 \begin{align}
 \label{eqmott}
@@ -487,16 +461,28 @@ These two relations are captured by
 \end{align}
 respectively.
 In conventional metals, these relations hold under the assumption of a smooth energy-dependence of the conductivity near the Fermi level. 
-Hence, \textit{a priori}, they are not guaranteed to hold for our case. To check their validity here, we compare the nature of the response-curves obtained by direct computation [via Eq.~\eqref{eqalphaell}] and those obtained from Eq.~\eqref{eqmott}. Such a numerical comparison is demonstrated in Fig.~\ref{fig:compare}, which shows that the relations capture the positions and the signs of the features of the direct results. The deviation, measured by the $L^2$ norm of the difference relative to the norm of the right-hand side over the plotted range, is $0.13$ for the Mott relation and $0.40$ for the WF law. The Mott relation overestimates the heights of the peaks of $\tilde\alpha_{xx}$, and the WF law replaces the flat-topped structure of each peak of $\tilde\ell_{xx}$ by a single higher peak. As the temperature is lowered, the deviation of the WF law decreases, whereas that of the Mott relation stays close to $0.13$. 
+Hence, \textit{a priori}, they are not guaranteed to hold for our case. To check their validity here, we compare the nature of the response-curves obtained by direct computation [via Eq.~\eqref{eqalphaell}] and those obtained from Eq.~\eqref{eqmott}. Such a numerical comparison is demonstrated in Fig.~\ref{fig:compare}, which shows that the relations capture the positions and the signs of the features of the direct results. The deviation, measured by the $L^2$ norm of the difference relative to the norm of the right-hand side over the plotted range, is $0.13$ for the Mott relation and $0.40$ for the WF law. The Mott relation overestimates the heights of the peaks of $\tilde\alpha_{xx}$, and the WF law replaces the flat-topped structure of each peak of $\tilde\ell_{xx}$ by a single higher peak.
 
 
 The relations in Eq.~\eqref{eqmott} follow from the Sommerfeld expansion of the three integrals in Eq.~\eqref{eqalphaell}, which share the weight $-\partial_\varepsilon f_0\,(\partial_{k_x}\varepsilon)^2$. For an energy-independent $\tau$, they require no further input about the system. They hold when the function
 \begin{align}
 g(\varepsilon)=\frac{e^2\,\tau}{L_y}\sum_{n,\,{\rm si}}\int\frac{dk_x}{2\,\pi}\,\delta\left(\varepsilon-\varepsilon_n^{\rm si}\right)\left(\partial_{k_x}\varepsilon^{\rm si}_n\right)^2=\frac{e^2\,\tau}{L_y}\sum_{n,\,{\rm si}}\sum_{k_{\rm F}}\frac{|v_x|}{2\,\pi}
 \end{align}
-varies slowly on the scale of $T$ around $\mu$, with corrections of relative order $(\pi\,T/\delta)^2$, where $\delta$ is the energy scale on which $g$ varies. Here, $g$ is not smooth. Every extremum of a PLL band, and every end point of a branch, changes the number of Fermi points. Near a band minimum, $|v_x|$ grows as the square root of the distance in energy, and $\partial_\varepsilon g$ diverges there. In windows of width of the order of $T$ around these energies, the relations are not controlled. The Wiedemann-Franz law involves $g$ itself and not its derivative, and it is the more robust of the two in the regime of Table~\ref{tabdev}. Both relations require elastic scattering, and they are exact in the Sommerfeld sense for the constant relaxation time used here. They are consistency checks of the smoothness of $g$, and they do not test the PLL physics itself.
+varies slowly on the scale of $T$ around $\mu$, with corrections of relative order $(\pi\,T/\delta)^2$, where $\delta$ is the energy scale on which $g$ varies. Here, $g$ is not smooth. Every extremum of a PLL band, and every end point of a branch, changes the number of Fermi points. Near a band minimum, $|v_x|$ grows as the square root of the distance in energy, and $\partial_\varepsilon g$ diverges there. In windows of width of the order of $T$ around these energies, the relations are not controlled. The WF law involves $g$ itself and not its derivative, and it is the more robust of the two in the regime of Table~\ref{tabdev}. Both relations require elastic scattering, and they are exact in the Sommerfeld sense for the constant relaxation time used here. They are consistency checks of the smoothness of $g$, and they do not test the PLL physics itself.
 
-We have quantified the deviations for $\xi=+$, $v_y/v_x=0.8$ and $\eta_x=0.3$ in the window $10^{-3}\le\tilde\mu\le3\times10^{-3}$, restricted to $a_0\,|k_x|\le0.3$. On restoring $\hbar$ for graphene, with $v_x\simeq10^6$ m/s and $a_0=0.142$ nm, the unit of energy is $\hbar\,v_x/a_0\simeq4.63$ eV, and the window corresponds to $4.6\ {\rm meV}\lesssim\mu\lesssim13.9\ {\rm meV}$. The temperatures in Table~\ref{tabdev} are $1$, $2$, $5$, and $10$ mK. On restoring $k_{\rm B}$, each millikelvin corresponds to $1.86\times10^{-8}$ in units of $v_x/a_0$, so that the four values are $T=1.9\times10^{-8}$, $3.7\times10^{-8}$, $9.3\times10^{-8}$, and $1.9\times10^{-7}$. The three values of $a_0^2\,e\,\mathcal B$ in the table correspond to pseudo-fields of $0.33$, $0.65$, and $1.3$ tesla, on restoring $\hbar/(e\,a_0^2)\simeq3.3\times10^{4}$ T. With $\delta_{\rm M}$ and $\delta_{\rm WF}$ denoting the relative deviation, in the sense of the $L^2$ norm over the window, between the direct integral and the right-hand side of the Mott relation and of the Wiedemann-Franz law, respectively, the results are collected in Table~\ref{tabdev}. The finite-difference step of the Mott derivative is chosen as a fraction of $T$, and the $L^2$ norms are evaluated at points sampled uniformly over the window. For these values of $\mathcal B$, the lowest level at $k_x=0$ lies above the window (at about $6\times10^{-3}$ for $a_0^2\,e\,\mathcal B=2\times10^{-5}$). The Fermi points in the window are produced by the tilt, which carries the dispersive levels with several hundred values of $n$ across the chemical potential, and the individual PLL peaks are not resolved. A Fermi point enters or leaves the range $a_0\,|k_x|\le0.3$ whenever $\mu$ crosses the energy of a level at the end of this range. The function $g(\varepsilon)$ is therefore a staircase, with a spacing between neighbouring steps of the order of $7\times10^{-5}$ for $a_0^2\,e\,\mathcal B=2\times10^{-5}$. This spacing is larger than $T$ by about three orders of magnitude for the temperatures considered here. The relations are consequently probed on a single step of $g$ smoothed by the Fermi function. Under this condition, the deviation of the Mott relation takes values between $0.133$ and $0.136$, which are essentially independent of $T$ and $\mathcal B$ and coincides with the $L^2$ deviation computed for an isolated step. The Wiedemann-Franz law holds to better than $10^{-4}$ throughout. Its deviation grows as $\sqrt{T}$ and, at fixed $T$, as $\sqrt{|\mathcal B|}$. A larger tilt reduces the deviation of the Wiedemann-Franz law, for instance $\delta_{\rm WF}=6.9\times10^{-5}$, $3.7\times10^{-5}$ and $2.0\times10^{-5}$ for $\eta_x=0.2$, $0.3$ and $0.45$ at $a_0^2\,e\,\mathcal B=2\times10^{-5}$ and $T=5$ mK, while $\delta_{\rm M}=0.133$, $0.133$ and $0.135$ for the three. For $\eta_x=0$ there are no Fermi points in the window and the conductivity vanishes, and hence the deviations are not defined. For $\eta_x=0.1$, some levels are not monotonic over the range of $k_x$ retained, and this case is not covered by our evaluation. The absolute magnitude of the response in this regime depends on the range of $k_x$ retained. Reducing the cutoff from $a_0\,|k_x|\le0.3$ to $0.1$ lowers $\sigma_{xx}$ by a factor of about 13 and raises $\delta_{\rm WF}$ to $2.0\times10^{-4}$, while $\delta_{\rm M}$ remains $0.133$ for $a_0^2\,e\,\mathcal B=2\times10^{-5}$ and $T=5$ mK. The relations therefore test the smoothness of $g$ and not the PLL physics. For measurements, this implies that at millikelvin temperatures the Mott formula reproduces the thermopower only at the level of about 13 per cent in the $L^2$ sense, with the discrepancy concentrated at the steps of $g$, and a direct measurement of the thermopower is preferable if a higher accuracy is needed. The electronic part of the thermal conductivity can be inferred from the conductivity through the Wiedemann-Franz law to the accuracy stated here.
+
+%%%%%%%%%%%%%
+\begin{figure*}[t!]
+\centering
+\includegraphics[width= 0.8 \textwidth]{mott}
+%\includegraphics[width=0.47 \textwidth]{mot2} 
+\caption{\label{fig:compare}Strained tilted Dirac cone with $\xi=+$: comparison of the Mott relation (left) and the Wiedemann-Franz (WF) law (right) [cf. Eq.~\eqref{eqmott}] with the direct integrals [cf. Eq.~\eqref{eqalphaell}]. The parameters are $\tilde{\mathcal B}=2\times10^{-4}$, $\eta_x=0.7$, $v_y/v_x=0.8$, $\tilde\beta=10^{4}$, and $0\le a_0\,k_x\le10^{-3}$. The quantities are normalised as in Fig.~\ref{fig:transport}.}
+\end{figure*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+We have quantified the deviations for $\xi=+$, $v_y/v_x=0.8$ and $\eta_x=0.3$ in the window $ 10^{-3}\le\tilde\mu\le3\times10^{-3}$, restricted to $a_0\,|k_x|\le 0.3$. With $\delta_{\rm M}$ and $\delta_{\rm WF}$ denoting the relative deviation, in the sense of the $L^2$ norm over the window, between the direct integral and the right-hand side of the Mott relation and of the WF law, respectively, the results are collected in Table~\ref{tabdev}. On restoring $\hbar$ for graphene, with $v_x\simeq10^6$ m/s and $a_0=0.142$ nm, the unit of energy is $\hbar\,v_x/a_0\simeq4.63$ eV, and the window corresponds to $4.6\ {\rm meV}\lesssim\mu\lesssim13.9\ {\rm meV}$. The temperatures in Table~\ref{tabdev} are $1$, $2$, $5$, and $10$ mK. On restoring $k_{\rm B}$, each milliKelvin corresponds to $1.86\times10^{-8}$ in units of $v_x/a_0$, so that the four values are $T=1.9\times10^{-8}$, $3.7\times10^{-8}$, $9.3\times10^{-8}$, and $1.9\times10^{-7}$. The three values of $a_0^2\,e\,\mathcal B$ in the table correspond to pseudomagnetic fields of $0.33$, $0.65$, and $1.3$ Tesla, on restoring $\hbar/(e\,a_0^2)\simeq 3.3\times10^{4}$ T. 
+%%%%%%%%%%%%
+The finite-difference step of the Mott derivative is chosen as a fraction of $T$, and the $L^2$ norms are evaluated at points sampled uniformly over the window. For these values of $\mathcal B$, the lowest level at $k_x=0$ lies above the window (at about $6\times10^{-3}$ for $a_0^2\,e\,\mathcal B=2\times10^{-5}$). The Fermi points in the window are produced by the tilt, which carries the dispersive levels with several hundred values of $n$ across the chemical potential, and the individual PLL peaks are not resolved. A Fermi point enters or leaves the range $a_0\,|k_x|\le0.3$ whenever $\mu$ crosses the energy of a level at the end of this range. The function $g(\varepsilon)$ is therefore a staircase, with a spacing between neighbouring steps of the order of $7\times10^{-5}$ for $a_0^2\,e\,\mathcal B=2\times10^{-5}$. This spacing is larger than $T$ by about three orders of magnitude for the temperatures considered here. The relations are consequently probed on a single step of $g$ smoothed by the Fermi function. Under this condition, the deviation of the Mott relation takes values between $0.133$ and $0.136$, which are essentially independent of $T$ and $\mathcal B$, and coincides with the $L^2$ deviation computed for an isolated step. The WF law holds to better than $10^{-4}$ throughout. Its deviation grows as $\sqrt{T}$ and, at fixed $T$, as $\sqrt{|\mathcal B|}$. It therefore decreases as the temperature is lowered, whereas the deviation of the Mott relation remains at the value quoted above. A larger tilt reduces the deviation of the WF law. For instance, $\delta_{\rm WF}=6.9\times10^{-5}$, $3.7\times10^{-5}$, and $2.0\times10^{-5}$ for $\eta_x=0.2$, $0.3$, and $0.45$ at $a_0^2\,e\,\mathcal B=2\times10^{-5}$ and $T=5$ mK, while $\delta_{\rm M}=0.133$, $0.133$, and $0.135$ for the three $\eta_x$ values. For $\eta_x=0$, there are no Fermi points in the window and the conductivity vanishes, and hence the deviations are not defined. For $\eta_x=0.1$, some levels are not monotonic over the range of $k_x$ retained, and this case is not covered by our evaluation. The absolute magnitude of the response in this regime depends on the range of $k_x$ retained. Reducing the cutoff from $a_0\,|k_x|\le0.3$ to $0.1$ lowers $\sigma_{xx}$ by a factor of about 13 and raises $\delta_{\rm WF}$ to $2.0\times10^{-4}$, while $\delta_{\rm M}$ remains $0.133$ for $a_0^2\,e\,\mathcal B=2\times10^{-5}$ and $T=5$ mK. The relations therefore test the smoothness of $g$ and not the PLL physics. For measurements, this implies that, at milliKelvin temperatures, the Mott formula reproduces the thermopower only at the level of about 13 per cent in the $L^2$ sense, with the discrepancy concentrated at the steps of $g$, and a direct measurement of the thermopower is preferable if a higher accuracy is needed. The electronic part of the thermal conductivity can be inferred from the conductivity through the WF law to the accuracy stated here.
 
 
 \begin{table}[t!]
@@ -529,13 +515,13 @@ $4\times10^{-5}$ & $1.3$ & $2.5\times10^{-3}$ & $0.133$ & $0.133$ & $0.133$ & $0
 \section{Experimental considerations}
 \label{secexp}
 
-The calculation is most directly relevant for platforms in which tilted Dirac cones and controllable strain gradients coexist. Strained graphene is the platform in which pseudomagnetic fields have been demonstrated, with pseudo-fields of several hundred tesla in nanobubbles \cite{levy10, graphene-strain-geim, vozmediano10, strain-2d}. A tilt can be induced in the deformed lattice, as discussed in Ref.~\cite{tilted-goerbig}. Organic conductors of the $\alpha$-(BEDT-TTF)$_2$I$_3$ family under pressure host tilted Dirac cones with a large tilt \cite{organic-tilted-dirac}, and the tilt is tunable by the pressure and by its direction. Two-dimensional borophene with tilted anisotropic cones \cite{zhou14} is a further candidate, in which the strain response has still to be explored.
+The calculation is most directly relevant for platforms in which tilted Dirac cones and controllable strain gradients coexist. Strained graphene is the platform in which pseudomagnetic fields have been demonstrated, with pseudo-fields of several hundred Tesla in nanobubbles \cite{levy10, graphene-strain-geim, vozmediano10, strain-2d}. A tilt can be induced in the deformed lattice, as discussed in Ref.~\cite{tilted-goerbig}. Organic conductors of the $\alpha$-(BEDT-TTF)$_2$I$_3$ family under pressure host tilted Dirac cones with a large tilt \cite{organic-tilted-dirac}, and the tilt is tunable by the pressure and by its direction. Two-dimensional borophene with tilted anisotropic cones \cite{zhou14} is a further candidate, in which the strain response has still to be explored.
 
-The observables are the following. The first is the longitudinal conductivity as a function of the chemical potential, tuned by a gate, whose peak structure follows the band edges of the PLLs. The second is the dependence of the conductivity on the tilt, $\tilde\sigma_{xx}$ of Fig.~\ref{figsigeta}, which has a term linear in $\eta_x$ for $\mu\neq0$. The third is the invariance of the response under the reversal of the sign of the pseudomagnetic field, which can be probed by reversing the strain gradient. The fourth is the thermopower $S=\alpha_{xx}/\sigma_{xx}$. By the Mott relation, $S\sim\pi^2\,T/(3\,e\,\delta)$. For $T/\delta\sim0.1$, this is a few tens of $\mu$V/K on restoring $k_{\rm B}/e\simeq86\ \mu$V/K, which is within the range of thermopower measurements in graphene.
+The observables are the following. The first is the longitudinal conductivity as a function of the chemical potential, tuned by a gate, whose peak structure follows the band edges of the PLLs. The second is the dependence of the conductivity on the tilt, cf. Fig.~\ref{figsigeta}, which has a term linear-in-$\eta_x$ for $\mu\neq 0$. The third is the invariance of the response under the reversal of the sign of the pseudomagnetic field, which can be probed by reversing the strain gradient. The fourth is the thermopower $S=\alpha_{xx}/\sigma_{xx}$. By the Mott relation, $S\sim\pi^2\,T/(3\,e\,\delta)$. For $T/\delta\sim0.1$, this is a few tens of $\mu$V/K on restoring $k_{\rm B}/e\simeq86\ \mu$V/K, which is within the range of thermopower measurements in graphene.
 
-We estimate the scales as follows. Each Fermi point contributes $e^2\,v\,\tau/(2\,\pi\,L_y)$ to the conductivity of a valley [cf. Eq.~\eqref{eqsigT0}], that is $e^2/(2\,\pi)$ times the ratio of the mean free path to the width. For a mean free path comparable to the width, the contribution of each Fermi point is of the order of $e^2/(2\,\pi)$, which is the conductance quantum, about $39\ \mu$S on restoring $\hbar$, and it is well above the resolution of standard transport measurements. The level spacing at $k_x=0$ follows from the Dirac-like ladder, $E_n\simeq\sqrt{2\,n\,v_x\,v_y\,e\,|\mathcal B|}$. In units of $v_x/a_0$, this is $\sqrt{2\,n\,(v_y/v_x)\,a_0^2\,e\,|\mathcal B|}$, and the PLLs are resolved for $T\ll\Delta E$. For $v_x\simeq v_y\simeq10^6$ m/s, restoring $\hbar$ and $k_{\rm B}$ gives $E_n\simeq36\ {\rm meV}\sqrt{n\,|\mathcal B|/(1\ {\rm tesla})}$, and the PLLs are then resolved at temperatures of a few tens of kelvin for a pseudo-field of about 1 tesla. In organic conductors, where the velocities are about an order of magnitude smaller, the spacings are reduced by the same factor. The pseudo-field is related to the strain gradient by $e\,\mathcal B=(\gamma/2)\,\partial_y\varsigma_{yy}$. For $\gamma\,a_0\simeq3$, a strain variation of $1\%$ over $100$ nm and $a_0=0.142$ nm gives $a_0^2\,e\,|\mathcal B|\simeq2\times10^{-5}$, which is about $0.7$ tesla on restoring $\hbar/e$. PLL spectroscopy at liquid-helium temperatures \cite{levy10} shows that the disorder broadening in graphene can remain below the spacing of the levels, which is the condition $1/\tau\ll\Delta E$ for the validity of our treatment.
+We estimate the scales as follows. Each Fermi point contributes $e^2\,v\,\tau/(2\,\pi\,L_y)$ to the conductivity of a valley [cf. Eq.~\eqref{eqsigT0}], that is $e^2/(2\,\pi)$ times the ratio of the mean free path to the width. For a mean free path comparable to the width, the contribution of each Fermi point is of the order of $e^2/(2\,\pi)$, which is the conductance quantum, evaluating to $\simeq 39\ \mu$S on restoring $\hbar$, and it is well above the resolution of standard transport measurements. The level spacing at $k_x=0$ follows from the Dirac-like ladder, $E_n\simeq\sqrt{2\,n\,v_x\,v_y\,e\,|\mathcal B|}$. In units of $v_x/a_0$, this is $\sqrt{2\,n\,(v_y/v_x)\,a_0^2\,e\,|\mathcal B|}$, and the PLLs are resolved for $T\ll\Delta E$. For $v_x\simeq v_y\simeq10^6$ m/s, restoring $\hbar$ and $k_{\rm B}$ gives $E_n\simeq36\ {\rm meV}\sqrt{n\,|\mathcal B|/(1\ {\rm Tesla})}$, and the PLLs are then resolved at temperatures of a few tens of Kelvin for a pseudomagnetic field of about 1 Tesla. In organic conductors, where the velocities are about an order of magnitude smaller, the spacings are reduced by the same factor. The pseudo-field is related to the strain gradient by $e\,\mathcal B=(\gamma/2)\,\partial_y\varsigma_{yy}$. For $\gamma\,a_0\simeq3$, a strain variation of $1\%$ over $100$ nm and $a_0=0.142$ nm gives $a_0^2\,e\,|\mathcal B|\simeq2\times10^{-5}$, which is about $0.7$ Tesla on restoring $\hbar/e$. PLL spectroscopy at liquid-helium temperatures \cite{levy10} shows that the disorder-broadening in graphene can remain below the spacing of the levels, which is the condition $1/\tau\ll\Delta E$ for the validity of our treatment.
 
-There are practical challenges. The first is the realisation of a strain gradient that is constant over the width of the sample, since the pseudo-field varies if the gradient is not constant. The second is the tuning of the tilt independently of the strain, which in organic conductors is achieved by pressure and which also changes the velocities. The third concerns the valleys. A transport measurement yields the sum of the contributions of both valleys, whereas our figures refer to the valley $\xi=+$. The contribution of the valley $\xi=-$ follows from Eq.~\eqref{eqevals} for $\xi=-$, and it has a different range of the PLLs owing to the strain-induced shift of the Dirac points. The two contributions therefore do not cancel. We do not propose a valley-resolved transport measurement, and the comparison with experiment should be made for the sum. Finally, the strain also shifts the chemical potential, and a gate is needed to separate this effect from that of the PLLs.
+There are indeed practical challenges. The first is the realisation of a strain gradient that is constant over the width of the sample, since the pseudo-field varies if the gradient is not constant. The second is the tuning of the tilt independently of the strain, which in organic conductors is achieved by pressure and which also changes the velocities. The third concerns the valleys. A transport measurement yields the sum of the contributions of both valleys, whereas our figures refer to the valley $\xi=+$. The contribution of the valley $\xi=-$ follows from Eq.~\eqref{eqevals} for $\xi=-$, and it has a different range of the PLLs owing to the strain-induced shift of the Dirac points. The two contributions therefore do not cancel. We do not propose a valley-resolved transport measurement, and the comparison with experiment should be made for the sum. Finally, the strain also shifts the chemical potential, and a gate is needed to separate this effect from that of the PLLs.
 
 \section{Summary and discussion}
 \label{secsum}
@@ -658,16 +644,16 @@ we end up with a confluent hypergeometric differential equation for $\tilde u(\t
 \begin{align}
 & {\tilde y}\, \partial^2_{\tilde y} \tilde u (\tilde y)
 + (\Gamma- \tilde y)\, \partial_{\tilde y} \tilde u({\tilde y})-\alpha \,\tilde u({\tilde y}) = 0\,, \quad
-\alpha = \frac{\,2\,\tilde r^2 \, |\zeta| + 2 \, (\sqrt{\Delta}-s_{-} \, s_+ -k_x \, \tilde r)} 
-{2 \, |\zeta| \, \tilde r^2} \,, \quad
+\alpha = \frac{\,\tilde r^2 \, |\zeta| +  \sqrt{\Delta}-s_{-} \, s_+ -k_x \, \tilde r } 
+{  |\zeta| \, \tilde r^2} \,, \quad
 %%%%%%%%%%%%%%%%%%%%
 \Gamma = 1+ \frac{2 \,\sqrt{\Delta }}{\tilde  r^2 \, |\zeta|}\, .
 \end{align}
 %%%%%%%%%%%%%%%%%%%%%%
 It turns out that the regular solutions involve the Kummer’s function, $\mathcal M (\alpha, \Gamma, \tilde y)$, where $\alpha = - n $ (taking $n \in 0 \cup {\mathbb{Z}}^+ $) is a non-positive integer but $\Gamma $ is not. Then, we have the condition that
 \begin{align}
--\,n = \frac{\,2\,\tilde r^2 \, |\zeta| + 2 \, (\sqrt{\Delta}-s_{-} \, s_+ -k_x \, \tilde r)} 
-{2 \, |\zeta| \, \tilde r^2} 
+-\,n = \frac{ \tilde r^2 \, |\zeta| +  \sqrt{\Delta}-s_{-} \, s_+ -k_x \, \tilde r } 
+{  |\zeta| \, \tilde r^2} 
 %%%%%%%%%%%%
 \Rightarrow
 \sqrt{\Delta}=-\tilde r^2 \, |\zeta |\, (n+1)+k_x \, \tilde r+s_{-} \, s_+ \,.
@@ -680,13 +666,14 @@ Using the relation $ \Delta = (k_x \, \tilde r+s_{-} \, s_+ )^2-\tilde r^2 \, \e
 \quad \mathcal M (-n, \Gamma, \tilde y) = {\mathcal L}^{\Gamma-1}_{n}(\tilde y)\,,
 \end{align}
 where ${\mathcal L}^\ell_{n} (\tilde y )$ is the Generalised (or, alternatively, Associated) Laguerre polynomial with $ n \in 0 \cup {\mathbb Z}^+$. The condition $\alpha=-n$ truncates the series of the confluent hypergeometric function to a polynomial, which is the analogue of the Landau quantisation condition. The integer $n$ counts the nodes of the wave function along $y$, and the dependence of $\sqrt\Delta$ on $k_x$ through $\tilde r_\xi$ and $s_\xi$ is what makes the levels dispersive. Imposing the requisite physical condition that $\sqrt{\Delta} \geq 0$, which reads $\tilde r^2\,|\zeta|\,(n+1) \leq k_x\,\tilde r + s_-\,s_+$, we obtain an upper bound for $n$ as $ 
-\left\lfloor\frac{8 \,(2  + 3 \, \xi \,a_0\, k_x)}   { a_0^2\,|\zeta| \,(6 +\xi \,a_0\,  k_x)^2} \right\rfloor - 1 $. The symbol $\left \lfloor  \Upsilon \right \rfloor$ denotes the greatest integer less than or equal to $\Upsilon$. The final solution is obtained as Ref.~\cite{strained-dirac-franz}
+\left\lfloor\frac{8 \,(2  + 3 \, \xi \,a_0\, k_x)}   { a_0^2\,|\zeta| \,(6 +\xi \,a_0\,  k_x)^2} \right\rfloor - 1 $. The symbol $\left \lfloor  \Upsilon \right \rfloor$ denotes the greatest integer less than or equal to $\Upsilon$. The final solution is obtained as in Ref.~\cite{strained-dirac-franz}:
+%%%%%%%%%%%%%%%%%%%
 \begin{align}
 & \phi_B (k_x, y+ y^+_{\rm sg}) \, \Theta \left[ \text{sgn}(\mathcal B ) \left(- y\right)  \right],\,
 \text{ where }\nn
 %%%%%%%%%%%%%%%%%%%%
- &\phi_B (k_x, y) = e^{\frac{  v_x \, \text{sgn} (\mathcal B) \,s_{-\xi}\, y} { v_y \, r_+\, a_0 }} \, 
-y^{-\frac{1}{2}+{\frac{ v_x \,\sqrt{\Delta}}{ r_\xi^2\, a_0^2\, e  \, v_y  \left |{\mathcal B}  \right |}}} \, 
+ &\phi_B (k_x, y) = e^{\frac{  v_x \, \text{sgn} (\mathcal B) \,s_{-}\, y} { v_y \, r_+\, a_0 }} \, 
+y^{-\frac{1}{2}+{\frac{ v_x \,\sqrt{\Delta}}{ r_+^2\, a_0^2\, e  \, v_y  \left |{\mathcal B}  \right |}}} \, 
 {\mathcal L}^{\Gamma-1}_{n}(\tilde y)\,, 
 %%%%%%%%%%%%%
  \quad  y^+_{\rm sg} = \frac{s_+ } {r_+ \,a_0\,  e\, {\mathcal B}}\,,\quad
